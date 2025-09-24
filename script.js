@@ -1,14 +1,15 @@
-// Seleção dos elementos
-const nome = document.getElementById("nome");
-const email = document.getElementById("email");
-const senha = document.getElementById("senha");
-const nascimento = document.getElementById("nascimento");
-const termos = document.getElementById("termos");
-const btnCadastrar = document.getElementById("btnCadastrar");
-const feedback = document.getElementById("feedback");
+// Seleção dos elementos com querySelector
+const form = document.querySelector("#formCadastro");
+const nome = document.querySelector("#nome");
+const email = document.querySelector("#email");
+const senha = document.querySelector("#senha");
+const nascimento = document.querySelector("#nascimento");
+const termos = document.querySelector("#termos");
+const btnCadastrar = document.querySelector("#btnCadastrar");
+const feedback = document.querySelector("#feedback");
 
 // Evento de clique no botão
-btnCadastrar.onclick = function(event) {
+btnCadastrar.onclick = function (event) {
   event.preventDefault(); // evita envio real do formulário
 
   let erros = [];
